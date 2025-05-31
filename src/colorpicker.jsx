@@ -19,7 +19,10 @@ function Colorpicker(){
         <div class="box">
             
             <div id="colorpicker-container" style={{backgroundColor: color}} onClick={handlecopy} >
+                <div>
                 <p>You picked: {color}</p>
+                <p>Click to copy!</p>
+                </div>
             </div>
             <p className="pic-p">Pick a color: </p>
             <input type="color" onChange={changecolor} value={color} />
